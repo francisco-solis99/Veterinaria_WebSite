@@ -22,3 +22,11 @@ stringsElement: '#cadenas-texto', // ID del elemento que contiene cadenas de tex
 	contentType: 'html', // 'html' o 'null' para texto sin formato
 
 });
+
+
+
+// EFECTO SCROLLEAR 
+window.addEventListener('scroll', () => {
+	const header = document.getElementById('content-move1'); //se guarad en una constante
+	header.style.opacity = '1' - window.pageYOffset / 650; //cambiar opacidad cuando llega a un punto en Y al hacer scroll en la pagina
+});
