@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    background-image: linear-gradient(-25deg, #f2f2f2 50%, #5b4a9a 50%);
+    min-width: 100vh;
+    
+}
+
+.contenedor-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;  /*El contenido reemplazado se escala para mantener su relación de aspecto mientras se ajusta dentro del cuadro de contenido del elemento*/
+}
+
+ /* --------------FIN DE ESTILOS GENERALES --------------------*/
+
+ /* ----------------------ESTILOS AL CONTENIDO PRINCIPAL, HEADER Y NAV --------------*/
+
+ .contenedor_principal{
+     background-color: #fff;
+     width: 90%;
+     max-width: 1200px;
+     margin: 50px auto;
+     padding: 40px;
+     border-radius: 11px;
+    
+ }
+
+ header{
+     display: flex; /*Contenedor flex*/
+     align-items: center; /*Elementos del cotenedor alineados*/
+     justify-content: space-between; /*Solo espacio entre los elemntos, no around*/
+     flex-wrap: wrap; /*puede haber cambio de línea.*/
+     margin-bottom: 80px;
+    
+ }
+
+ .logo{
+    text-decoration: none;
+     font-size: 30px;
+     font-weight: 700;
+     color: #000;
+     transition: all  150ms ease-in;
+ }
+
+ .logo:hover {
+    font-weight: 200;
+ }
+
+ .menu{
+     display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
+ }
+
+ .menu a{
+     font-size: 23px;
+     border-bottom: 2px solid #f2c968;
+     border-top: 2px solid #f2c968;
+     padding: 8px;
+     margin-left: 40px;
+     text-decoration: none;
+     color: black;
+     transition: all  500ms ease;
+ }
+
+ .menu a:hover{
+     border-top: none;
+     border-bottom: none;
+     border-left: 2px solid #f2c968 ;
+     border-right: 2px solid #f2c968;
+ }
+
+ main{
+     display: flex;
+     justify-content: flex-end;
+     align-items: center;
+ }
+
+ main .contenedor-img {
+    max-width: 60%;
+    margin-right: 40px;
+}
+ 
+
+.contenedor-texto .titulo {
+    font-size: 50px;
+    font-weight: normal;
+    margin-bottom: 40px;
+}
+
+
+.contenedor-texto p {
+    margin-bottom: 40px;
+    line-height: 36px;
+}
+
+.btn-link {
+    display: inline-block;
+    padding: 10px 30px;
+   border-radius: 100px;
+    margin-right: 10px;
+    text-decoration: none;
+    background: #f2f2f2;
+}
+
+.btn-link:hover,
+.btn-link.activo {
+   color: #fff;
+   background: #5b4a9a;
+}
