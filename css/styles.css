@@ -7,7 +7,7 @@
 body{
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
-    background-image: linear-gradient(-25deg, #f2f2f2 50%, #5b4a9a 50%);
+    background-image: linear-gradient(-45deg, #f2f2f2 65%, #5b4a9a 35%);
     min-width: 100vh;
     
     
@@ -25,7 +25,7 @@ body{
 
  .contenedor_principal{
      background-color: #fff;
-     width: 90%;
+     width: 100%;
      max-width: 1200px;
      margin: 50px auto;
      padding: 40px;
@@ -140,7 +140,7 @@ body{
     }
 }
 
-/* ------------------------ESTILOS PARA EL SLIDE SHOW */
+/* ------------------------ESTILOS PARA EL SLIDE SHOW -------------------------*/
 
 .contenedor_servicios{
 	color: white;   
@@ -150,7 +150,8 @@ body{
     position: relative;/*Para que tega efecto el z index se debe colocar con una posicion relativa*/
     background: black;
     margin-top: 100vh;
-    height: 900px;
+    height: 800px; /*Altura de cada una de las secciones*/
+    
     
 }
 
@@ -161,9 +162,22 @@ body{
     margin: auto;
 }
 
-.contenedor_servicios .text_servicios{
+.contenedor_servicios .text_servicios, .contenedor_galeria .text_galeria{
     margin-bottom: 50px;
     padding: 0;
     font-size: 50px;
     text-align: center;
+}
+
+/* ---------------------ESTILOS PARA LA GALERIA---------------------- */
+
+
+.contenedor_galeria{
+    color: white;   
+	width: 100%;
+	min-height: 100vh;
+	z-index: 150; /*Para mandarlo al frente zindex(100) > zindex(0)*/
+    position: relative;/*Para que tega efecto el z index se debe colocar con una posicion relativa*/
+    background: rgb(238, 54, 192);
+    height: 800px; /*Altura de cada una de las secciones*/
 }
