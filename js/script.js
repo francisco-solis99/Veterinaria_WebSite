@@ -28,10 +28,10 @@ stringsElement: '#cadenas-texto', // ID del elemento que contiene cadenas de tex
 // EFECTO SCROLLEAR 
 window.addEventListener('scroll', () => {
 	const header = document.getElementById('content-move1'); //se guarad en una constante
-	header.style.opacity = '1' - window.pageYOffset / 650; //cambiar opacidad cuando llega a un punto en Y al hacer scroll en la pagina
+	header.style.opacity = '1' - window.pageYOffset / 1500; //cambiar opacidad cuando llega a un punto en Y al hacer scroll en la pagina
 });
 
 window.addEventListener('scroll', () => {
 	const services = document.getElementById('content-move2'); //se guarad en una constante
-	services.style.opacity = '2' - window.pageYOffset /800; //cambiar opacidad cuando llega a un punto en Y al hacer scroll en la pagina
+	services.style.opacity = '2' - window.pageYOffset /900; //cambiar opacidad cuando llega a un punto en Y al hacer scroll en la pagina
 });
