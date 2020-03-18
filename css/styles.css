@@ -145,7 +145,7 @@ body{
     color: #c99806;
     font-style: normal;
 }
-/* ------------------------ESTILOS PARA EL SLIDE SHOW -------------------------*/
+/* ------------------------ESTILOS PARA LA SECCION DE SERVICIOS-------------------------*/
 
 .contenedor_servicios{
 	color: white;   
@@ -334,22 +334,127 @@ body{
 }
 
 
+/* ESTILOS PARA LA SECCION REDES SOCIALES */
 
+.contenedor_contacto{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #151515;
+}
+
+.contenedor_contacto nav{
+    width: 100%;
+    color: white;
+    max-width: 78rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* pointer-events: none; */
+}
+
+.contacto_text h2{
+    cursor: pointer;
+    font-size: 2.6rem;
+    text-transform: uppercase;
+    pointer-events: auto;
+    margin-left: 1.6rem; /*Margin necesario*/
+
+}
+
+/* .contenedor_contacto nav:hover{
+    pointer-events: auto;
+} */
+
+.contenedor_contacto nav .linea{
+    width: 15rem;
+    height: 3px;
+    margin-left: 2rem;
+    margin-right: auto;
+    background-color: white;
+    transform-origin: left;
+    transition: transform 500ms ease-in-out;
+    transform: scaleX(.2);
+}
+
+.contenedor_contacto nav:hover .linea{
+    transform: scaleX(1);
+}
+
+
+.contacto_barra{
+    display: flex;
+}
+
+.contacto_barra .item_contacto{
+    margin: 0 2.5rem;
+    list-style: none;
+    opacity: 0;
+    transition: all 500ms ease-in;
+}
+
+.contenedor_contacto nav:hover .contacto_barra .item_contacto{
+    opacity: 1;
+}
+
+.contacto_barra .item_contacto a{
+    font-size: 2.6rem;
+    color: white;
+    
+}
+
+.contacto_barra .item_contacto i{
+    transition: color 300ms ease-in;
+}
+
+.contacto_barra .item_contacto a:hover i.fa-facebook-f{
+    color: #3b5998;
+}
+
+.contacto_barra .item_contacto a:hover i.fa-envelope-square{
+    color: #d32323;
+}
+
+.contacto_barra .item_contacto a:hover i.fa-twitter{
+    color: #1da1f2;
+}
+
+.contacto_barra .item_contacto a:hover i.fa-linkedin-in{
+    color: #007bb5;
+}
+
+.contacto_barra .item_contacto a:hover i.fa-instagram{
+    color: #f46f30;
+}
+/* ESTILOS PARA SECCION DEL FOOTER */
 
 
 /* MEDIAQUERYS PARA RESPONSIVE */
-@media screen and (max-width: 925px) {
+
+
+@media screen and (max-width: 930px) {
     main {
          flex-direction: column;
          text-align: center;
     }
-
-    main .contenedor-img {
-         margin-bottom: 40px;
+    header {
+        justify-content: left;
     }
 
-    header{
-        justify-content: left;
+    .contenedor_contacto nav, .contacto_barra{
+        flex-direction: column;
+    }
+
+    .contenedor_contacto nav .linea{
+        margin: auto;
+
+    }
+
+    .contacto_barra .item_contacto{
+        margin: 2.5rem 0;
+
     }
 }
 
