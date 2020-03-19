@@ -25,7 +25,7 @@ body{
  /* ----------------------ESTILOS AL CONTENIDO PRINCIPAL, HEADER Y NAV --------------*/
 
  .contenedor_principal{
-     background-color: #fff;
+     background-color: rgb(250, 119, 119);
      width: 90%;
      max-width: 1200px;
      margin: 40px auto;
@@ -35,16 +35,13 @@ body{
      top: 0;
      left: 0;
      margin-left: 60px; */
-     z-index: 0;
+     /* z-index: 0; */
 
      /* display: flex;
      flex-flow: wrap;
      justify-content: center;
      flex-wrap: wrap;
       */
-    
-
-
  }
 
  header{
@@ -80,7 +77,7 @@ body{
      padding: 8px;
      margin-left: 40px;
      text-decoration: none;
-     color: black;
+     color: white;
      transition: all  500ms ease;
  }
 
@@ -89,7 +86,7 @@ body{
     display: block;
     width: 0;
     height: 2px;
-    background: #f2c968;
+    background: #ffb300;
     transition: width .3s;
     border-top: none;
     border-bottom: none;
@@ -142,7 +139,7 @@ body{
 
 .contenedor-texto .mascota {
     font-weight: normal;
-    color: #c99806;
+    color: #ffc414;
     font-style: normal;
 }
 /* ------------------------ESTILOS PARA LA SECCION DE SERVICIOS-------------------------*/
@@ -150,10 +147,10 @@ body{
 .contenedor_servicios{
 	color: white;   
 	width: 100%;
-	min-height: 121vh;  /*IMPORTANTE RESPONSIVE*/
+	min-height: 100vh;  /*IMPORTANTE RESPONSIVE*/
     background-color: black;
     margin-top: 7vh;
-    /* height: 800px; Altura de cada una de las secciones */
+    /* height: 10vh;  */
 
 }
 

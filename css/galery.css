@@ -31,6 +31,10 @@ body{
     text-decoration: none;
     color: rgb(250, 124, 110);
 }
+.seccionGaleria .contenedor_galeria h1 a:hover{
+
+    color: white
+}
 .contenedor_galeria .borde{
     width: 180px;
     height: 4px;
